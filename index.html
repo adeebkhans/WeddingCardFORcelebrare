@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Image Text Editor</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="image-section">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="Red Festive Invitation Card.jpeg" alt="Slide 1">
+                    </div>
+                    <!-- <div class="swiper-slide">
+                        <img src="Red Festive Invitation Card.jpeg" alt="Slide 2">
+                    </div> -->
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <button id="addTextBtn">Add Text</button>
+            <input type="file" id="imageUpload" accept="image/*">
+            <button onclick="document.getElementById('imageUpload').click()">Upload Image</button>
+
+
+            <div class="text-controls" id="textControls">
+                <textarea id="textInput" placeholder="Enter text"></textarea>
+                <select id="fontFamily">
+                    <option value="Arial">Arial</option>
+                    <option value="Times New Roman">Times New Roman</option>
+                    <option value="Courier">Courier</option>
+                    <option value="Verdana">Verdana</option>
+                </select>
+                <select id="fontSize">
+                    <option value="12">12</option>
+                    <option value="16">16</option>
+                    <option value="24">24</option>
+                    <option value="32">32</option>
+                    <option value="48">48</option>
+                </select>
+                <div class="formatting-buttons">
+                    <button id="boldBtn">B</button>
+                    <button id="italicBtn">I</button>
+                    <button id="underlineBtn">U</button>
+                    <div class="color-circle" id="colorCircle" style="background-color: black;"></div>
+                    <input type="color" id="textColor">
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+       <script src="index.js"></script>
+</body>
+
+</html>
